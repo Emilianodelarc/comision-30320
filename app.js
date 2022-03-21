@@ -62,7 +62,7 @@ class Usuario{
     }
     imprimir(objeto){
         for (const clave in objeto){
-            alert(`${clave}:${objeto[key]}`)
+            alert(`${clave}:${objeto[clave]}`)
         }
     }
 }
@@ -102,8 +102,9 @@ while (empezar) {
     let edadMascota = prompt('ingrese edad de la mascota, (si no lo sabe ingrese cahcorro,medio,adulto)');
     let vacunadoMascota = prompt('esta vacunado?');
 
-    mascotaRegistrada = new Mascotas(nombreMascota,responsableMascota,tipoMascota,edadMascota,vacunadoMascota)
-    salida = prompt('para salir escriba "fin"')
+    mascotaRegistrada = new Mascotas(nombreMascota,responsableMascota,tipoMascota,edadMascota,vacunadoMascota);
+
+    let salida = prompt('para salir escriba "fin"').toLowerCase()
     if(salida == 'fin'){
         empezar = false
     }
