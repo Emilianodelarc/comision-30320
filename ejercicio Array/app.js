@@ -87,10 +87,11 @@ function modificarProducto() {
 alert("bienvenido Flint Lockwood diatónico Super mutando dispensador dinámico");
 
 let entrada = prompt(
-  "elija un opcion del menu. A- Crear Produfuco\n B-Listar Los Productos\n C-Borrar un Producto\n D- Modificar Producto\n E-Salir "
+  "elija un opcion del menu.\n A- Crear Produfuco\n B-Listar Los Productos\n C-Borrar un Producto\n D- Modificar Producto\n E-Salir "
 ).toUpperCase();
 
 while (entrada != "E") {
+    console.log(entrada);
   switch (entrada) {
     case "A":
       crearProducto();
@@ -110,7 +111,7 @@ while (entrada != "E") {
       break;
   }
 
-  prompt(
-    "elija un opcion del menu. A- Crear Produfuco\n B-Listar Los Productos\n C-Borrar un Producto\n D- Modificar Producto\n E-Salir "
+  entrada = prompt(
+    "elija un opcion del menu.\n A- Crear Produfuco\n B-Listar Los Productos\n C-Borrar un Producto\n D- Modificar Producto\n E-Salir "
   ).toUpperCase();
 }
