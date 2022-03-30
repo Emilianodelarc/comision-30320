@@ -8,11 +8,20 @@
 */
 
 function init(){
+  titulo();
+  botonesImprimir();
+  cambiarClase();
+  mensaje();
+    
+  }
+
+  function titulo() {
     let h1 = document.createElement('h1')
     h1.innerText= 'Bienvenido a la Comisión-30320'
     document.body.append(h1);
+  }
 
-
+  function botonesImprimir() {
     categorias.forEach(item => {
       let div = document.createElement('div')
       div.innerHTML +=`
@@ -20,13 +29,19 @@ function init(){
 
       document.body.append(div)
     })
+  }
 
+  function cambiarClase() {
     let botones = document.getElementsByTagName('button')
     for (const boton of botones) {
       boton.className = 'styledBtn'
     }
+  }
 
+  function mensaje() {
     let p = document.createElement('p')
     p.innerText = 'Por favor, selecciona una categoría para continuar'
     document.body.append(p)
   }
+
+  
