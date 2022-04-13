@@ -1,0 +1,35 @@
+ul {
+    border:1px solid blue;
+    border-radius: 20px;
+    display: flex;
+    width: 80%;
+    padding:20px;
+
+}
+
+ul h4 {
+    width:25%;
+    vertical-align: top;
+}
+
+ul li {
+    padding:5%;
+    list-style-type: none;
+    border-right: 1px solid;
+}
+
+ul>:last-child {
+    border-right: 0;
+}
+
+li h5 {
+font-size: small;
+}
+.btnStyle {
+    border-radius: 1rem;
+    margin:3rem;
+    padding:3rem;
+    font-size: larger;
+    background-color:pink;
+    box-shadow: 0 10px 10px 0;
+}
